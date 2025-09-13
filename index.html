@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Migrate - Your Immigration Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1d4ed8',
+                        secondary: '#0e7490',
+                        accent: '#f97316',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .floating-btn {
+            transition: all 0.3s ease;
+        }
+        .floating-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .logo-container {
+            background: linear-gradient(135deg, #1d4ed8 0%, #0e7490 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            color: white;
+            font-weight: bold;
+            border: 2px solid #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .job-card {
+            transition: all 0.3s ease;
+        }
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        /* Animation for logo */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .logo-container {
+            animation: pulse 4s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Enhanced Logo Space -->
+                <div class="logo-container w-14 h-14 mr-3">
+                    <!-- Replace this div with your actual logo -->
+                    <img src="GLOBAL LOGO" alt="Global Migrate Logo" class="w-10 h-10">
+                </div>
+                <span class="text-xl font-bold text-blue-700">Global Migrate</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-blue-700 font-medium hover:text-orange-500">Home</a>
+                <a href="#services" class="text-gray-600 font-medium hover:text-blue-700">Services</a>
+                <a href="#jobs" class="text-gray-600 font-medium hover:text-blue-700">Jobs</a>
+                <a href="#testimonials" class="text-gray-600 font-medium hover:text-blue-700">Testimonials</a>
+                <a href="#contact" class="text-gray-600 font-medium hover:text-blue-700">Contact</a>
+            </nav>
+            
+            <button class="md:hidden text-blue-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 bg-gradient-to-r from-blue-50 to-cyan-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <div class="flex items-center mb-6">
+                    <!-- Large Logo in Hero Section -->
+                    <div class="logo-container w-20 h-20 mr-4">
+                        <img src="GLOBAL LOGO" alt="Global Migrate Logo" class="w-14 h-14">
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-blue-800">Global Migrate</h1>
+                </div>
+                <p class="text-gray-600 text-lg mb-8">Immigration Consultants and Advisors
+Global Migrate is a leading provider of worldwide visas and Immigration services. We are headquartered in the business district of London, United Kingdom and have our subsidiary branches in UAE, Qatar, South Africa, Canada, Australia and Vietnam. Our global sphere of operations and years of par excellence has given us more perspective and versatility in the Immigration sector, certainly giving us an edge over the others. Our reputed organization was established over a decade ago and we continually reform our policies and working etiquettes to meet the current requirements. So rest assured your application is handled with utmost sincerity and professionalism. Our expert consultants are always ready to deliver the most suitable program for you based on your budget and requirements. Start your journey with us today.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Get Started</a>
+                    <a href="#services" class="border border-blue-700 text-blue-700 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300">Our Services</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <div class="bg-blue-200 rounded-2xl p-6 shadow-lg">
+                        <img src="immigrantsHERO" alt="Immigration process" class="rounded-xl shadow-md w-full h-64 object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
+                        <div class="flex items-center">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                            </div>
+                            <p class="text-sm font-medium">98% Success Rate<br>Across All Applications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-4">Our Immigration Services</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">We offer comprehensive immigration services to make your relocation process smooth and successful.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-blue-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Student Visa</h3>
+                    <p class="text-gray-600">Comprehensive assistance for student visa applications to top educational destinations worldwide.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-briefcase text-blue-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Work Visa</h3>
+                    <p class="text-gray-600">Expert guidance for work visa applications and employment opportunities in high-demand countries.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-home text-blue-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Permanent Residency</h3>
+                    <p class="text-gray-600">End-to-end support for permanent residency applications with the highest success rates.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-passport text-blue-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Citizenship by Investment</h3>
+                    <p class="text-gray-600">Premium citizenship programs through investment in real estate and business ventures.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-building text-blue-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Residency Programs</h3>
+                    <p class="text-gray-600">Legal residency solutions for individuals and families seeking to relocate abroad.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-blue-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Family Sponsorship</h3>
+                    <p class="text-gray-600">Assistance with family reunification and sponsorship immigration programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Jobs Section -->
+    <section id="jobs" class="py-16 bg-gradient-to-br from-blue-100 to-cyan-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-4">Available Job Opportunities</h2>
+            <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12">Explore exciting job opportunities in your dream destination. Apply now and take the first step towards your new career.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Healthcare Jobs -->
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Caregiver</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Canada</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Compassionate caregivers needed for elderly care facilities and home care services.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£25,000 - £35,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Security Officer</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">UK</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Licensed security professionals for corporate buildings and retail establishments.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£22,000 - £30,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Delivery Driver</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Australia</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Experienced drivers with clean records for parcel and food delivery services.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£24,000 - £32,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Cleaning & Maintenance -->
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Cleaning Staff</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Canada</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Commercial cleaning staff for office buildings and healthcare facilities.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£20,000 - £28,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Storekeeper</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">UK</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Organized individuals for inventory management in retail and warehouse settings.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£23,000 - £30,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Factory Worker</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Australia</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Assembly line workers for manufacturing and production facilities.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£25,000 - £33,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Warehouse & Construction -->
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Warehouse Associate</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Canada</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Warehouse staff for picking, packing, and shipping operations.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£24,000 - £32,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Farm Worker</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">UK</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Agricultural workers for crop harvesting and livestock care.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£22,000 - £28,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Accountant</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Australia</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Qualified accountants for corporate finance departments and accounting firms.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£40,000 - £60,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Hospitality -->
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Construction Worker</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Canada</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Skilled laborers for residential and commercial construction projects.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£28,000 - £40,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Hotel Room Attendant</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">UK</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Housekeeping staff for luxury hotels and resorts.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£21,000 - £27,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Waiter/Waitress</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Australia</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Service staff for restaurants, cafes, and catering companies.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£20,000 - £28,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Additional Jobs -->
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Housekeeping Staff</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">Canada</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Residential cleaning staff for hotels and private residences.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£22,000 - £29,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="job-card bg-white p-6 rounded-xl shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Receptionist</h3>
+                        <span class="bg-blue-100 text-blue-700 text-sm font-medium px-3 py-1 rounded-full">UK</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Front desk professionals for corporate offices and medical facilities.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">£23,000 - £30,000</span>
+                        <a href="#apply" class="text-blue-700 hover:text-blue-800 font-medium">Apply Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Job Application Form -->
+            <div id="apply" class="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-blue-800 mb-6 text-center">Job Application Form</h3>
+                <form action="mailto:i.canada90@yahoo.com" method="post" enctype="text/plain" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Full Name *</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label for="age" class="block text-gray-700 font-medium mb-2">Age *</label>
+                        <input type="number" id="age" name="age" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label for="nationality" class="block text-gray-700 font-medium mb-2">Nationality *</label>
+                        <input type="text" id="nationality" name="nationality" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label for="residence" class="block text-gray-700 font-medium mb-2">Country of Residence *</label>
+                        <input type="text" id="residence" name="residence" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label for="education" class="block text-gray-700 font-medium mb-2">Education Level *</label>
+                        <select id="education" name="education" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="">Select Education Level</option>
+                            <option value="highschool">High School Diploma</option>
+                            <option value="associate">Associate Degree</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="phd">PhD</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="country-interest" class="block text-gray-700 font-medium mb-2">Country Interested In *</label>
+                        <select id="country-interest" name="country-interest" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="">Select Country</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="australia">Australia</option>
+                            <option value="usa">United States</option>
+                            <option value="germany">Germany</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="program-type" class="block text-gray-700 font-medium mb-2">Program Type *</label>
+                        <select id="program-type" name="program-type" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="">Select Program Type</option>
+                            <option value="work">Work Visa</option>
+                            <option value="study">Student Visa</option>
+                            <option value="investment">Citizenship by Investment</option>
+                            <option value="residency">Residency Program</option>
+                            <option value="family">Family Sponsorship</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="position" class="block text-gray-700 font-medium mb-2">Position Applied For *</label>
+                        <select id="position" name="position" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="">Select Position</option>
+                            <option value="caregiver">Caregiver</option>
+                            <option value="security">Security Officer</option>
+                            <option value="driver">Driver</option>
+                            <option value="cleaning">Cleaning Staff</option>
+                            <option value="storekeeping">Storekeeper</option>
+                            <option value="factory">Factory Worker</option>
+                            <option value="warehouse">Warehouse Associate</option>
+                            <option value="farm">Farm Worker</option>
+                            <option value="accountant">Accountant</option>
+                            <option value="construction">Construction Worker</option>
+                            <option value="hotel">Hotel Room Attendant</option>
+                            <option value="waiter">Waiter/Waitress</option>
+                            <option value="housekeeping">Housekeeping Staff</option>
+                            <option value="receptionist">Receptionist</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <label for="experience" class="block text-gray-700 font-medium mb-2">Relevant Experience</label>
+                        <textarea id="experience" name="experience" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Additional Information</label>
+                        <textarea id="message" name="message" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    
+                    <div class="md:col-span-2 flex justify-center mt-4">
+                        <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white font-medium py-3 px-8 rounded-lg transition duration-300">Submit Application</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-800 mb-4">Success Stories</h2>
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Hear from people who have successfully immigrated with our assistance.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-blue-700 font-bold text-xl mr-4">AS</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Ahmed S.</h4>
+                            <p class="text-blue-600 text-sm">Canada PR Visa</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Global Migrate made my Canadian dream come true. Their guidance through the entire process was invaluable. I'm now settled in Toronto with my family."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-blue-700 font-bold text-xl mr-4">MJ</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Maria J.</h4>
+                            <p class="text-blue-600 text-sm">UK Work Visa</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The team at Global Migrate helped me secure a work visa for the UK. Their expertise and support made the complex process straightforward and stress-free."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-blue-700 font-bold text-xl mr-4">RL</div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Robert L.</h4>
+                            <p class="text-blue-600 text-sm">Australia Student Visa</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I couldn't have asked for a better consultancy. They helped me get my student visa for Australia and provided excellent pre-departure guidance."</p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-r from-blue-800 to-cyan-700 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Contact Us</h2>
+            <p class="text-center max-w-2xl mx-auto mb-12">Reach out to us for any inquiries about our immigration services. Our team is ready to assist you.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Get In Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Address</h4>
+                                <p class="text-blue-100">123 Global Street, London, EC1A 2AT</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Phone</h4>
+                                <p class="text-blue-100">+447960446582</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Email</h4>
+                                <p class="text-blue-100">i.canada90@yahoo.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4">Office Hours</h3>
+                        <p class="text-blue-100">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p class="text-blue-100">Saturday: 10:00 AM - 4:00 PM</p>
+                        <p class="text-blue-100">Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Send Us a Message</h3>
+                    <form action="mailto:i.canada90@yahoo.com" method="post" enctype="text/plain" class="space-y-6">
+                        <div>
+                            <label for="contact-name" class="block mb-2">Full Name</label>
+                            <input type="text" id="contact-name" name="name" required class="w-full px-4 py-3 bg-blue-700 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-blue-400 placeholder-blue-300">
+                        </div>
+                        
+                        <div>
+                            <label for="contact-email" class="block mb-2">Email Address</label>
+                            <input type="email" id="contact-email" name="email" required class="w-full px-4 py-3 bg-blue-700 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-blue-400 placeholder-blue-300">
+                        </div>
+                        
+                        <div>
+                            <label for="contact-subject" class="block mb-2">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" required class="w-full px-4 py-3 bg-blue-700 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-blue-400 placeholder-blue-300">
+                        </div>
+                        
+                        <div>
+                            <label for="contact-message" class="block mb-2">Message</label>
+                            <textarea id="contact-message" name="message" rows="4" required class="w-full px-4 py-3 bg-blue-700 border border-blue-600 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-blue-400 placeholder-blue-300"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-white text-blue-700 font-medium py-3 px-8 rounded-lg hover:bg-blue-50 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <!-- Logo Space in Footer -->
+                        <div class="logo-container w-12 h-12 mr-3">
+                            <img src="GLOBAL LOGO" alt="Global Migrate Logo" class="w-8 h-8">
+                        </div>
+                        <span class="text-xl font-bold">Global Migrate</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Your trusted partner for immigration services to countries around the world.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#jobs" class="text-gray-400 hover:text-white">Job Opportunities</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Student Visa</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Work Visa</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Permanent Residency</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Family Sponsorship</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Citizenship Application</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-gray-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">123 Global Street, London, EC1A 2AT</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone text-gray-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">+447960446582</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-gray-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">i.canada90@yahoo.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Global Migrate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/447960446582" target="_blank" class="floating-btn fixed bottom-6 right-24 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg z-40">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Floating Email Button -->
+    <a href="mailto:i.canada90@yahoo.com" class="floating-btn fixed bottom-6 right-6 w-14 h-14 bg-blue-500 hover:bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg z-40">
+        <i class="fas fa-envelope text-2xl"></i>
+    </a>
+</body>
+</html>
